@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
 import {createStore, combineReducers} from 'redux';
 import {Provider, connect} from 'react-redux';
-import {reducer1} from './son1';
+import {reducer1,reducer2} from './reducer';
 import Son1 from './son1';
 import Son2 from './son2';
 
@@ -22,30 +22,18 @@ class App extends Component{
     }
 }
 
-const h1ChangeAction ={ type:'TEXT_CHANGE'};
-const buttonChangeAction ={ type: 'BUTTON_CHANGE'};
-
-const initialState = {text: 'hello'};
-const reducer0= (state = initialState ,action) => {
-    switch(action.type){
-        case 'TEXT_CHANGE':
-            return {text: '点击H1改变文本'};
-        case 'BUTTON_CHANGE':
-            return {text: '点击button改变文本'};
-        default:
-            return initialState;
-    }
-}
-
-const reducer = combineReducers({reducer0,reducer1});
+const reducer = combineReducers({reducer1,reducer2});
 
 let store = createStore(reducer);
 
 function mapStateToProps(state){
     return {
-        text: state.reducer0.text
+        text: state.reducer1.text
     };
 }
+
+const h1ChangeAction ={ type:'TEXT_CHANGE'};
+const buttonChangeAction ={ type: 'BUTTON_CHANGE'};
 
 function mapDispatchToProps(dispatch){
     return {

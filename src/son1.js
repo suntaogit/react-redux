@@ -10,19 +10,8 @@ class Son1 extends Component{
     }
 }
 
-const initialState1 = {son1_text:'son1的数据haha'};
-
-export const reducer1 = (state=initialState1, action) => {
-    switch(action.type){
-        case 'suibian':
-            return {son1_text:'随便'};
-        default:
-            return initialState1;
-    }
-} 
-
 function mapStateToProps(state){
-    return {son1_text: state.reducer1.son1_text}
+    return {son1_text: state.reducer2.son1_text}
 }
 
 export default connect(mapStateToProps)(Son1);

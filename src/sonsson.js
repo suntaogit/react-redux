@@ -11,8 +11,9 @@ class Sonsson extends Component{
         )
     }    
 }
+
 function mapStateToProps(state){
-    return {son1_text: state.reducer1.son1_text}
+    return {son1_text: state.reducer2.son1_text}
 }
 
 export default connect(mapStateToProps)(Sonsson);
