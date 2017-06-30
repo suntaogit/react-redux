@@ -1,5 +1,5 @@
 {
-  "name": "react-redux",
+  "name": "react-redux-demo",
   "version": "1.0.0",
   "description": "react-redux demo",
   "main": "index.js",
@@ -18,7 +18,10 @@
   "dependencies": {
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
-    "react-scripts": "1.0.10"
+    "react-redux": "^5.0.5",
+    "react-router": "^4.1.1",
+    "react-scripts": "1.0.10",
+    "redux": "^3.7.1"
   },
   "bugs": {
     "url": "https://github.com/suntaogit/react-redux/issues"
