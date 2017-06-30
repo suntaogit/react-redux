@@ -14,8 +14,10 @@ class App extends Component{
                 <h1 onClick={h1ChangeText}>{text}</h1>
                 <button onClick={buttonChangeText}>click</button>
                 <hr />
+                <p>-兄弟1数据</p>
                 <Son1 />
                 <hr />
+                <p>-兄弟2数据</p>
                 <Son2 />
             </div>
         )

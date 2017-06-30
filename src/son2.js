@@ -8,6 +8,8 @@ class Son2 extends Component{
         return(
             <div>
                 <h1>{son1_text}</h1>
+                <hr />
+                <p>--兄弟2儿子数据</p>
                 <h2><Sonsson /></h2>
             </div>
         )
